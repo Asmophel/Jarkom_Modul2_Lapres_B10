@@ -8,6 +8,7 @@ Pada MALANG,
 ```nano /etc/bind/named.conf.local```
 
 lalu ubah konfigurasi menjadi
+
 ![](.//img/1_1.PNG)
 
 Buat folder semeru di dalam /etc/bind
@@ -34,6 +35,7 @@ untuk membuat alias,
 ```nano /etc/bind/semeru/semerub10.pw```
 
 lalu edit seperti berikut,
+
 ![](.//img/2.PNG)
 
 lalu lihat hasilnya dengan
@@ -170,14 +172,17 @@ lalu restart apache
 lalu pada
 ```nano /etc/apache2/sites-available/semerub10.pw```
 edit menjadi seperti
+
 ![](.//img/9.PNG)
 
 lalu pada
 ```nano /var/www/semerub10.pw/.htaccess```
 edit menjadi
+
 ![](.//img/9_1.PNG)
 
 lalu coba pada browser
+
 ![](.//img/9_2.PNG)
 
 ### Soal 10
@@ -187,12 +192,15 @@ Ekstrak file penanjakan, isinya adalah
 Tambahkan ServerName dan DocumentRoot pada
 ```nano /etc/apache2/sites-available/penanjakan.semerub10.pw```
 menjadi
+
 ![](.//img/10_1.PNG)
 
 lalu aktifkan a2ensite
+
 ![](.//img/10_2.PNG)
 
 coba pada browser
+
 ![](.//img/10_3.PNG)
 
 ### Soal 11
@@ -202,21 +210,26 @@ Pada
 Tambahkan Option +Indexes untuk directory yang dapat diakses
 
 Dan tambahkan Option -Indexes untuk directory yang private
+
 ![](.//img/11.PNG)
 
 Pada browser, jika buka /public
+
 ![](.//img/11_1.PNG)
 
 jika buka isi public
+
 ![](.//img/11_2.PNG)
 
 ### Soal 12
-![](.//img/Probolinggo.penanjakan.semerub10.pw.1.jpg)
 
 membuka file Penanjakan.semerub10
 ```/etc/apache2/site-available/Penanjakan.semerub10.pw```
+
 ditambahkan
 ```ErrorDocument 404 /var/www/penanjakan.semerub10.pw/error/404.html```
+
+![](.//img/Probolinggo.penanjakan.semerub10.pw.1.jpg)
 
 ### Soal 13
 Pada
@@ -231,28 +244,36 @@ lalu restart apache
 ```service apache2 restart```
 
 Pada browser
+
 ![](.//img/13_1.PNG)
 
 ### Soal 14
 Pada
 ```nano /etc/apache2/sites-available/naik.gunung.semerub10.pw```
 Setting virtual host di port 8888, tambahkan ServerName dan DocumentRoot untuk naik.gunung.semerub10.pw
+
 ![](.//img/14.PNG)
 
 lalu pada
 ```nano /etc/apache2/ports.conf```
 tambahkan
 ```Listen 8888```
+
 ![](.//img/14_1.PNG)
 
 lalu restart apache
 ```service apache2 restart```
+
+lalu hasilnya saat mengakses naik.gunung.semerub10.pw:888
+
+![](.//img/15_3.PNG)
 
 ### Soal 15
 Pada PROBOLINGGO
 ```htpasswd -c /etc/apache2/.htpasswd semeru```
 
 lalu set username dan password
+
 ![](.//img/15_1.PNG)
 
 lalu pada
@@ -267,15 +288,18 @@ tambahkan
     Require valid-user
 </Directory>
 ```
+
 ![](.//img/15_2.PNG)
 
 lalu restart apache
 ```service apache2 restart```
 
 pada browser akan menjadi
+
 ![](.//img/15.PNG)
 
 setelah memasukkan uname dan pass
+
 ![](.//img/15_3.PNG)
 
 ### Soal 16
@@ -284,18 +308,21 @@ Pada
 
 tambahkan
 ```Redirect permanent / http://semerub10.pw/```
+
 ![](.//img/16.PNG)
 
 lalu restart apache
 ```service apache2 restart```
 
 Saat mengakses 10.151.83.92 (IP PROBOLINGGO)
+
 ![](.//img/16_2.PNG)
 
 ### Soal 17
 pada
 ```nano /var/www/penanjakan.semerub10.pw/.htaccess```
 Tambahkan
+
 ![](.//img/17.PNG)
 
 Tambahkan
@@ -306,5 +333,6 @@ pada
 
 Hasilnya jika mengkases
 ```http://penanjakan.semerub10.pw/public/images/semeru123.jpg```
+
 akan otomatis menuju
 ```http://penanjakan.semerub10.pw/public/images/semeru.jpg```
