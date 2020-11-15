@@ -1,6 +1,6 @@
 # Jarkom_Modul2_Lapres_B10
 ### Soal 3
-![](.//img/malang.semerub10.pw.jpg)
+![](.//img/malang.semerub10.pw.JPG)
 
 Pada malang dibuka semeru.pw
 ```nano /etc/bind/semeru/semeru.pw```
