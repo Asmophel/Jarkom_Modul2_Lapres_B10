@@ -1,7 +1,7 @@
 # Jarkom_Modul2_Lapres_B10
 
-## Jordan Gilbert - 0511184000084
-## Fandi Wahyu R - 05111840000108
+### Jordan Gilbert - 0511184000084
+### Fandi Wahyu R - 05111840000108
 
 ### Soal 3
 ![](.//img/malang.semerub10.pw.JPG)
